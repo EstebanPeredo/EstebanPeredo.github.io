@@ -1,0 +1,82 @@
+body {
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.slot-machine {
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+
+#cost-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 50px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+#spin-cost {
+  margin-right: 10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 25px;
+}
+
+.cost-input {
+  font-size: 25px;
+}
+
+#balance,
+.balance {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#spin-button {
+  padding: 20px 40px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 48px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  font-size: 75px;
+  margin: 10px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  text-align: center;
+  animation: spin 1s ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.slots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50%;
+}
