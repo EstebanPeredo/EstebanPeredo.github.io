@@ -29,7 +29,9 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 200px;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 @media (max-width: 600px) {
@@ -65,7 +67,7 @@ body {
 }
 
 .instagram:hover {
-  background-color: #f56040;
+  background-color: #e1306c;
   color: white;
 }
 
@@ -89,7 +91,7 @@ body {
   color: white;
 }
 
-.casino:hover {
+.slots:hover {
   background-color: orangered;
   color: white;
 }
