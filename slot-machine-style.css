@@ -1,7 +1,8 @@
 body {
   min-height: 100vh;
-  background-color: #f0f0f0;
   text-align: center;
+  background: #ed213a;
+  background: linear-gradient(to top, #93291e, #ed213a);
 }
 
 .slot-machine {
