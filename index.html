@@ -4,7 +4,7 @@
     <title>estebanperedo.com</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://kit.fontawesome.com/cdc3796168.js" crossorigin="anonymous"></script>
-    <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
@@ -52,6 +52,7 @@
       </div>
       <script src="starfield.js"></script>
   </body>
+
   <footer>
     <div class="footer-right">
       <p>
@@ -65,5 +66,23 @@
       <p>&copy;2023 Esteban Peredo</p>
     </div>
   </footer>
+  <script>
+    function positionFooter() {
+      var footer = document.querySelector('footer');
+      var mainContent = document.querySelector('body');
+      var header = document.querySelector('header');
+
+      var viewportHeight = window.innerHeight;
+      var headerHeight = header.offsetHeight;
+      var footerHeight = footer.offsetHeight;
+      var mainContentHeight = viewportHeight - headerHeight - footerHeight;
+
+      mainContent.style.minHeight = mainContentHeight + 'px';
+    }
+
+    positionFooter();
+
+    window.addEventListener('resize', positionFooter);
+  </script>
 </div>
 </html>
