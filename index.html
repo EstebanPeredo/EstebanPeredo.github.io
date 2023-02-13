@@ -3,57 +3,67 @@
   <head>
     <title>estebanperedo.com</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/cdc3796168.js" crossorigin="anonymous"></script>
     <meta name="viewport" contents="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
-    <div class="header">
-      <h1>Esteban Peredo</h1>
-      <h2>@estebanperedo</h2>
-    </div>
-    <div class="button-bar">
-      <button
-        class="button twitter"
-        onclick="window.open('https://twitter.com/estebanperedo_', '_blank')"
-      >
-        Twitter
-      </button>
-      <button
-        class="button instagram"
-        onclick="window.open('https://www.instagram.com/estebanperedo/', '_blank')"
-      >
-        Instagram
-      </button>
-      <button
-        class="button linkedin"
-        onclick="window.open('https://www.linkedin.com/in/esteban-peredo-762887221/', '_blank')"
-      >
-        LinkedIn
-      </button>
-      <button
-        class="button spotify"
-        onclick="window.open('https://open.spotify.com/user/eperedo4', '_blank')"
-      >
-        Spotify
-      </button>
-      <button
-        class="button github"
-        onclick="window.open('https://github.com/estebanperedo', '_blank')"
-      >
-        Github
-      </button>
-      <button
-        class="button twitterbot"
-        onclick="window.open('https://twitter.com/nbabettingmodel', '_blank')"
-      >
-        Twitter Bot
-      </button>
-      <button
-        class="button slots"
-        onclick="window.open('https://estebanperedo.com/slot-machine.html', '_blank')"
-      >
-        Slots
-      </button>
-    </div>
+    <div id="starfield">
+      <div class="header">
+        <h1>Esteban Peredo</h1>
+        <h2>@estebanperedo</h2>
+      </div>
+      <div class="icon-container">
+        <a href="https://twitter.com/estebanperedo_">
+          <div class="icon-button twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/esteban-peredo-762887221/">
+          <div class="icon-button linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/estebanperedo/">
+          <div class="icon-button instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </a>
+      </div>
+      <div class="buttons">
+        <button
+          class="button github"
+          onclick="window.open('https://github.com/estebanperedo', '_blank')"
+        >
+          Github
+        </button>
+        <button
+          class="button twitterbot"
+          onclick="window.open('https://twitter.com/nbabettingmodel', '_blank')"
+        >
+          Twitter Bot
+        </button>
+        <button
+          class="button slots"
+          onclick="window.open('https://estebanperedo.com/slot-machine.html', '_blank')"
+        >
+          Slots
+        </button>
+      </div>
+      <script src="starfield.js"></script>
   </body>
+  <footer>
+    <div class="footer-right">
+      <p>
+        Contact:
+        <a href="mailto:estebanperedo@estebanperedo.com"
+          >estebanperedo@estebanperedo.com</a
+        >
+      </p>
+    </div>
+    <div class="footer-left">
+      <p>&copy;2023 Esteban Peredo</p>
+    </div>
+  </footer>
+</div>
 </html>
