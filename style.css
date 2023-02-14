@@ -109,6 +109,19 @@ a {
   grid-row-gap: 0px;
   width: 90%;
   margin: 50px auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .buttons {
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 100px;
+    width: 100%;
+  }
 }
 
 .button {
@@ -168,8 +181,7 @@ footer {
   margin: 0;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;

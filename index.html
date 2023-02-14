@@ -66,23 +66,5 @@
       <p>&copy;2023 Esteban Peredo</p>
     </div>
   </footer>
-  <script>
-    function positionFooter() {
-      var footer = document.querySelector('footer');
-      var mainContent = document.querySelector('body');
-      var header = document.querySelector('header');
-
-      var viewportHeight = window.innerHeight;
-      var headerHeight = header.offsetHeight;
-      var footerHeight = footer.offsetHeight;
-      var mainContentHeight = viewportHeight - headerHeight - footerHeight;
-
-      mainContent.style.minHeight = mainContentHeight + 'px';
-    }
-
-    positionFooter();
-
-    window.addEventListener('resize', positionFooter);
-  </script>
 </div>
 </html>
